@@ -1,4 +1,4 @@
 Full list of scrambles that require 11 moves (minimum number of moves required in the worst case): https://pastebin.com/Lw5z4cvi 
-*note on notation: lowercase denoates counterclockwise turns, beta denotes B2, delta denotes D2, rho denotes R2
+*note on notation: lowercase denotes counterclockwise turns, beta denotes B2, delta denotes D2, rho denotes R2
 
-Example: D R2 D R D B2 R' D R2 D' B
+Example scramble that requires 11 moves to solve: D R2 D R D B2 R' D R2 D' B
