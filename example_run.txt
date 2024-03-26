@@ -1,0 +1,78 @@
+Original Cube: 
+          ---------
+          | W | W |
+          ---------
+          | W | W |
+          ---------
+--------- --------- --------- ---------
+| O | O | | G | G | | R | R | | B | B |
+--------- --------- --------- ---------
+| O | O | | G | G | | R | R | | B | B |
+--------- --------- --------- ---------
+          ---------
+          | Y | Y |
+          ---------
+          | Y | Y |
+          ---------
+
+Number of scramble moves: 11
+Move #1: D
+Move #2: R2
+Move #3: D
+Move #4: R
+Move #5: D
+Move #6: B2
+Move #7: R'
+Move #8: D
+Move #9: R2
+Move #10: D'
+Move #11: B
+
+Scramble: D R2 D R D B2 R' D R2 D' B 
+Scrambled Cube: 
+          ---------
+          | G | B |
+          ---------
+          | W | Y |
+          ---------
+--------- --------- --------- ---------
+| W | O | | G | O | | B | R | | Y | R |
+--------- --------- --------- ---------
+| R | W | | O | Y | | O | R | | Y | B |
+--------- --------- --------- ---------
+          ---------
+          | B | G |
+          ---------
+          | W | G |
+          ---------
+
+At depth 1, searched: 10 nodes
+At depth 2, searched: 91 nodes
+At depth 3, searched: 820 nodes
+At depth 4, searched: 7381 nodes
+At depth 5, searched: 66430 nodes
+At depth 6, searched: 597871 nodes
+At depth 7, searched: 5380840 nodes
+At depth 8, searched: 48427561 nodes
+At depth 9, searched: 435848050 nodes
+At depth 10, searched: -372334845 nodes
+At depth 11, searched: 1075746256 nodes
+
+Took 16017 seconds to find the solution
+Solution: U' F' R' U R2 F' R F2 U2 R' U 
+Solved Cube: 
+          ---------
+          | Y | Y |
+          ---------
+          | Y | Y |
+          ---------
+--------- --------- --------- ---------
+| R | R | | G | G | | O | O | | B | B |
+--------- --------- --------- ---------
+| R | R | | G | G | | O | O | | B | B |
+--------- --------- --------- ---------
+          ---------
+          | W | W |
+          ---------
+          | W | W |
+          ---------
