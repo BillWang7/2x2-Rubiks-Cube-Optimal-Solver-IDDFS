@@ -120,7 +120,6 @@ class Cube
         // Prints the cube's state in a readable format for the user 
         void printCube()
         {
-
             cout << "          ---------\n";
             cout << "          | " << topFace.topLeft << " | " << topFace.topRight << " |\n";
             cout << "          ---------\n";
