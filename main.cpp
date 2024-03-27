@@ -552,7 +552,7 @@ class Cube
         // Returns a vector of strings that represent the solution
         vector<string> depthFirstSearch(int depth)
         {
-            int counter = 0;
+            long long counter = 0;
             struct SolutionPath
             {
                 vector<string> movesMade;
