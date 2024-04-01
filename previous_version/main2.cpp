@@ -4,7 +4,6 @@ Author: Bill Wang
 Version: 2024-03-06
 */
 
-//I try to optimize by keeping track of searched states, but the process of checking if a state is searched actually takes more time
 #include <array> 
 #include <chrono> 
 #include <cstdlib>
@@ -57,18 +56,6 @@ class Face
                 return true;
             }
             else 
-            {
-                return false;
-            }
-        }
-
-        bool operator==(const Face& other) const
-        {
-            if (((*this).topLeft == other.topLeft) && ((*this).topRight == other.topRight) && (*this).bottomLeft == other.bottomLeft && (*this).bottomRight == other.bottomRight)
-            {
-                return true; 
-            }
-            else
             {
                 return false;
             }
@@ -156,19 +143,6 @@ class Cube
             cout << "          ---------\n";
             cout << "          | " << bottomFace.bottomLeft << " | " << bottomFace.bottomRight << " |\n"; 
             cout << "          ---------\n";
-        }
-
-        bool operator==(const Cube& other) const
-        {
-            if (((*this).leftFace == other.leftFace) && ((*this).topFace == other.topFace) && ((*this).frontFace == other.frontFace) 
-                && ((*this).bottomFace == other.bottomFace) && ((*this).rightFace == other.rightFace) && ((*this).backFace == other.backFace))
-            {
-                return true;
-            }
-            else 
-            {
-                return false;
-            }
         }
 
         // Performs a R move on the cube
@@ -578,34 +552,13 @@ class Cube
         vector<string> depthFirstSearch(int depth)
         {
             long long counter = 0;
-
-            // class SolutionPath
-            // {
-            //     public:
-            //         vector<string> movesMade;
-            //         Cube cubeState;
-
-            //         // bool operator==(const SolutionPath& other) const
-            //         // {
-            //         //     // if (*this).movesMade.size() >= other.movesMade.size(), then we know that other's is already less optimal than this and can discard it
-            //         //     if ((*this).cubeState == other.cubeState && (*this).movesMade.size() >= other.movesMade.size())
-            //         //     {
-            //         //         return true;
-            //         //     }
-            //         //     else
-            //         //     {
-            //         //         return false;
-            //         //     }
-            //         // }
-            // };
             struct SolutionPath
             {
                 vector<string> movesMade;
                 Cube cubeState;
-
             };
+
             SolutionPath rootNode;
-            vector<SolutionPath> searchedStates; 
 
             //"this" is a pointer to the object for which the member function is called  
             // "*this" dereferences the pointer and gives the value of the "Cube" 
@@ -620,29 +573,14 @@ class Cube
                 SolutionPath current;
                 current = solutionStack.top();
                 solutionStack.pop();
-                counter++;
+                counter++; 
                 if (current.cubeState.isSolved() == true)
                 {
                     cout << "At depth "<< depth << ", searched: " << counter << " nodes" << endl; 
                     return current.movesMade;
                 } 
 
-                bool currentIsOptimal = true;
-                cout << searchedStates.size() << endl;
-                for (int i = 0; i < searchedStates.size(); i++)
-                {
-                    // no reason to search node if you have been there with the same number of moves of less
-                    // there is a reason to search the node even if they are the same cubeState but you have made less moves to get there
-                    if (searchedStates[i].cubeState == current.cubeState && current.movesMade.size() >= searchedStates[i].movesMade.size())
-                    {
-                        currentIsOptimal = false;
-                        break;
-                    }
-                }
-                
-                // // cnt is used to check if the cube state has already been searched
-                // int cnt = count(searchedStates.begin(), searchedStates.end(), current);
-                if (current.movesMade.size() < depth && currentIsOptimal) 
+                if (current.movesMade.size() < depth)
                 {
                     for (int i = 0; i < NUMNEEDEDMOVES; i++)
                     {
@@ -653,7 +591,6 @@ class Cube
                         neighbor.movesMade.push_back(moveToMake);
                         solutionStack.push(neighbor);
                     }
-                    searchedStates.push_back(current);
                 }
             }
             cout << "At depth " << depth << ", searched: " << counter << " nodes" << endl; 

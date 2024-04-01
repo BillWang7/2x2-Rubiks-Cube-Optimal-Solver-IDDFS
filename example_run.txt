@@ -55,10 +55,10 @@ At depth 6, searched: 597871 nodes
 At depth 7, searched: 5380840 nodes
 At depth 8, searched: 48427561 nodes
 At depth 9, searched: 435848050 nodes
-At depth 10, searched: -372334845 nodes
+At depth 10, searched: 3922632451 nodes
 At depth 11, searched: 1075746256 nodes
 
-Took 16017 seconds to find the solution
+Took 16858 seconds to find the solution
 Solution: U' F' R' U R2 F' R F2 U2 R' U 
 Solved Cube: 
           ---------
