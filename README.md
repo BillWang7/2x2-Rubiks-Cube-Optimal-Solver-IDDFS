@@ -1,6 +1,7 @@
 # 2x2-Rubiks-Cube-Optimal-Solver-IDDFS
 
 Rubik’s Cube Theory
+
 Combinatorially, there are 3,674,160 valid states that a 2x2 Rubik’s cube can be in and any state can be solved in 11 turns or less (when making 90° or 180°). See the Rubik's Cube Wiki for a more detailed explanation. 
 
 How it Works
