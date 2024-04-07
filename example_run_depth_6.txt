@@ -1,0 +1,68 @@
+Original Cube: 
+          ---------
+          | W | W |
+          ---------
+          | W | W |
+          ---------
+--------- --------- --------- ---------
+| O | O | | G | G | | R | R | | B | B |
+--------- --------- --------- ---------
+| O | O | | G | G | | R | R | | B | B |
+--------- --------- --------- ---------
+          ---------
+          | Y | Y |
+          ---------
+          | Y | Y |
+          ---------
+
+Number of scramble moves: 6 
+Move #1: F
+Move #2: U
+Move #3: L2
+Move #4: D
+Move #5: R'
+Move #6: B
+
+Scramble: F U L2 D R' B 
+Scrambled Cube: 
+          ---------
+          | G | Y |
+          ---------
+          | Y | O |
+          ---------
+--------- --------- --------- ---------
+| W | O | | B | W | | B | G | | O | R |
+--------- --------- --------- ---------
+| R | W | | G | W | | B | Y | | R | G |
+--------- --------- --------- ---------
+          ---------
+          | O | R |
+          ---------
+          | Y | B |
+          ---------
+
+At depth 1, searched: 10 nodes
+At depth 2, searched: 91 nodes
+At depth 3, searched: 631 nodes
+At depth 4, searched: 3979 nodes
+At depth 5, searched: 23707 nodes
+At depth 6, searched: 37871 nodes
+
+Took 1 seconds to find the solution
+Solution: F' U R' U2 R' F' 
+Solved Cube: 
+          ---------
+          | W | W |
+          ---------
+          | W | W |
+          ---------
+--------- --------- --------- ---------
+| R | R | | B | B | | O | O | | G | G |
+--------- --------- --------- ---------
+| R | R | | B | B | | O | O | | G | G |
+--------- --------- --------- ---------
+          ---------
+          | Y | Y |
+          ---------
+          | Y | Y |
+          ---------
