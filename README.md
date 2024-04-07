@@ -10,7 +10,7 @@ This solver uses the IDDFS (iterative deepening depth-first search) algorithm to
 1. Download the files
 2. In a terminal shell, navigate to the directory named“2x2-Rubiks-Cube-Optimal-Solver-IDDFS” and type in “./main” to execute the program. 
 3. The program will prompt you to enter the number of scrambles, which can be any positive integer. 
-4. The program will then prompt you to enter each scramble move separately. To input a scramble move, use standard Rubik’s cube notation. 
+4. The program will then prompt you to enter each scramble move separately. To input a scramble move, use standard [Rubik’s cube notation](https://www.myrubik.com/elcub2x2x2.php?lang=en). 
 5. After all scramble moves are entered, the program will run, returning an optimal solution, the time it took to find the solution, and the solved state of the Rubik’s cube. 
 
 ## Test Cases & Example Runs
