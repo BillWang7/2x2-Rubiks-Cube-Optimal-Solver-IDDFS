@@ -13,3 +13,5 @@ This solver uses the IDDFS (iterative deepening depth-first search) algorithm to
 4. The program will then prompt you to enter each scramble move separately. To input a scramble move, use standard Rubik’s cube notation. 
 5. After all scramble moves are entered, the program will run, returning an optimal solution, the time it took to find the solution, and the solved state of the Rubik’s cube. 
 
+## Test Cases & Example Runs
+The solver can efficiently solve (< 2 seconds) any state of the 2x2 Rubik’s cube given that the most optimal solution is 6 moves or fewer. In cases where the optimal solution is greater than 6 moves, because the number of available states grows exponentially, the solver can become inefficient. For the worst case where the optimal solution is 11 moves, the solver takes around 4 hours to generate the optimal solution. 
