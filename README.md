@@ -19,8 +19,7 @@ The solver can efficiently solve (< 2 seconds) any state of the 2x2 Rubik’s cu
 Example 1: 6 move optimal solution
 
 <img width="191" alt="Screenshot 2024-04-06 at 10 40 53 PM" src="https://github.com/BillWang7/2x2-Rubiks-Cube-Optimal-Solver-IDDFS/assets/130268410/bb1ea52e-039d-47d8-b8d9-3c6ba1d889e1">
-
-
+<br>
 Example 2: 11 move optimal solution (worst case)
 
 <img width="179" alt="Screenshot 2024-04-06 at 10 41 14 PM" src="https://github.com/BillWang7/2x2-Rubiks-Cube-Optimal-Solver-IDDFS/assets/130268410/273e6fba-1763-4c66-9f4d-4dcf1d4a5a52">
