@@ -15,3 +15,6 @@ This solver uses the IDDFS (iterative deepening depth-first search) algorithm to
 
 ## Test Cases & Example Runs
 The solver can efficiently solve (< 2 seconds) any state of the 2x2 Rubik’s cube given that the most optimal solution is 6 moves or fewer. In cases where the optimal solution is greater than 6 moves, because the number of available states grows exponentially, the solver can become inefficient. For the worst case where the optimal solution is 11 moves, the solver takes around 4 hours to generate the optimal solution. 
+
+## Potential Optimizations
+The algorithm could keep track of all the states that it has already searched. However, this is difficult to implement as storing all of the searched states would take a lot of memory, and the process of checking if a state is searched within the unsorted searched states would require a linear search, which is time-consuming when searching millions of nodes. Alternatively, if there is a way to sort the searched states, then linear search would not be required to check if a node is already searched, and the algorithm would be significantly more time efficient. However, sorting the states of the Rubik’s cube is also a difficult task as there isn’t a direct way to quantify a Rubik’s cube state.
