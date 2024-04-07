@@ -660,6 +660,7 @@ class Cube
             vector<string> emptySolutionPath;
             return emptySolutionPath;
         }
+        
 };
 
 int main()
